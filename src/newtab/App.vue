@@ -46,6 +46,7 @@
                     from: '',
                     uuid: 0
                 },
+                stored: [],
                 url: ''
             }
         },
@@ -54,12 +55,14 @@
                 this.fetch()
             },
             fetch: function () {
+                let params = new URLSearchParams();
+                params.append('encode', 'utf-8')
+                for (let t of this.stored) {
+                    params.append('c', t)
+                }
                 this.$api
                     .get('https://v1.hitokoto.cn', {
-                        params: {
-                            encode: 'utf-8',
-                            c: 'a'
-                        }
+                        params: params
                     })
                     .then(response => {
                         this.hitokoto = response.data
@@ -70,8 +73,12 @@
                     })
             }
         },
-        created() {
-            this.fetch()
+        created: function () {
+            this.$browser.storage.local.get('types')
+                .then(data => {
+                    this.stored = data.types
+                    this.fetch()
+                })
         },
     }
 </script>

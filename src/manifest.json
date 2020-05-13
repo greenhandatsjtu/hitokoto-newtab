@@ -3,6 +3,7 @@
   "description": "A Vue.js web extension changing default new tab to hitokoto",
   "version": null,
   "manifest_version": 2,
+  "permissions": ["storage"],
   "browser_action": {
     "default_title": "hitokoto-newtab",
     "default_popup": "popup/popup.html"

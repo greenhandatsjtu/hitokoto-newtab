@@ -6,6 +6,8 @@ import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
 
 Vue.prototype.$api = Axios
+global.browser = require('webextension-polyfill')
+Vue.prototype.$browser = global.browser
 
 const opts = {
 }

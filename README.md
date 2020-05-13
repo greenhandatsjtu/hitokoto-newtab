@@ -21,7 +21,15 @@ First enable Developer mode in `chrome://extensions/`, choose `Load uppacked`, a
 
 ## Screenshot/项目截图
 
-![](images/screenshot.png)
+![](images/newtab.png)
+
+![](images/popup.png)
+
+## Todo
+
++ [x] 添加选择一言类别的功能
++ [ ] 添加上传壁纸的功能
++ [ ] 缩减插件大小
 
 ## Thanks/感谢
 

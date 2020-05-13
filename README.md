@@ -3,7 +3,7 @@ A web extension changing default new tab to hitokoto
 
 ___
 
-一个将浏览器新标签页改为一言的小插件，用`Vue.js`编写
+一个将浏览器新标签页改为[一言](https://hitokoto.cn/)的小插件，用`Vue.js`编写
 
 ## Usage/使用方法
 
@@ -34,3 +34,5 @@ First enable Developer mode in `chrome://extensions/`, choose `Load uppacked`, a
 ## Thanks/感谢
 
 [Kocal](https://github.com/Kocal)/**[vue-web-extension](https://github.com/Kocal/vue-web-extension)**
+
+[hitokoto-osc](https://github.com/hitokoto-osc)/**[Hitokoto-v1](https://github.com/hitokoto-osc/Hitokoto-v1)**

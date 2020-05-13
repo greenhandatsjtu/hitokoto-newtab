@@ -23,11 +23,16 @@ First enable Developer mode in `chrome://extensions/`, choose `Load uppacked`, a
 
 ![](images/newtab.png)
 
+---
+
 ![](images/popup.png)
+
+
 
 ## Todo
 
 + [x] 添加选择一言类别的功能
++ [ ] 新标签页同步更新选择
 + [ ] 添加上传壁纸的功能
 + [ ] 缩减插件大小
 

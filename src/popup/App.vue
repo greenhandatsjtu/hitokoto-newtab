@@ -2,8 +2,8 @@
     <v-app>
         <v-content>
             <v-container fluid fill-height style="min-width: 300px" class="justify-center">
-                <v-col :cols="4" v-for="(type, index) in types">
-                    <v-checkbox :key="index"
+                <v-col :cols="4" v-for="(type, index) in types" :key="index">
+                    <v-checkbox
                                 v-model="selected"
                                 :label="type.label"
                                 :value="type.val"

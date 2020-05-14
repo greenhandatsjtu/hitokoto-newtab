@@ -5,4 +5,6 @@ browser.runtime.onInstalled.addListener(function () {
         .then(() => {
             console.log("types initialized.")
         })
+    browser.storage.local.set({wallpaper: null})
+        .then()
 })

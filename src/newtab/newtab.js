@@ -4,6 +4,8 @@ import Axios from 'axios'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css'
+import VueClipboard from 'vue-clipboard2'
+
 
 Vue.prototype.$api = Axios
 global.browser = require('webextension-polyfill')
@@ -13,9 +15,12 @@ const opts = {
 }
 Vue.use(Vuetify)
 
+Vue.use(VueClipboard)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   vuetify: new Vuetify(opts),
+
   render: h => h(App)
 })

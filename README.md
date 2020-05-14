@@ -31,10 +31,11 @@ First enable Developer mode in `chrome://extensions/`, choose `Load uppacked`, a
 
 ## Todo
 
-+ [x] 添加选择一言类别的功能
++ [x] 添加选择一言类别的功能（2020/05/13）
 + [ ] 新标签页同步更新选择
-+ [ ] 添加上传壁纸的功能
++ [x] 添加上传壁纸的功能（2020/05/14）
 + [ ] 缩减插件大小
++ [ ] 美化界面
 
 ## Thanks/感谢
 

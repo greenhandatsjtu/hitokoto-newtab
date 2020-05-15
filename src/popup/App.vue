@@ -4,11 +4,11 @@
             <v-container fluid fill-height style="min-width: 300px" class="justify-center">
                 <v-col :cols="4" v-for="(type, index) in types" :key="index">
                     <v-checkbox
-                                v-model="selected"
-                                :label="type.label"
-                                :value="type.val"
-                                class="ma-0 pa-0"
-                                color="warning"></v-checkbox>
+                            v-model="selected"
+                            :label="type.label"
+                            :value="type.val"
+                            class="ma-0 pa-0"
+                            color="warning"></v-checkbox>
                 </v-col>
                 <v-btn color="success" @click="submit" :disabled="stored===selected" class="ma-auto">
                     <v-icon>mdi-sync</v-icon>
@@ -44,14 +44,18 @@
         },
         methods: {
             submit() {
-                browser.storage.local.set({types: this.selected})
-                .then(()=>{
-                    window.close()
-                })
+                this.$browser.storage.local.set({types: this.selected})
+                    .then(() => {
+                        this.$browser.runtime.sendMessage({
+                            action: "updateTypes",
+                            data: this.selected
+                        })
+                        window.close()
+                    })
             }
         },
         created() {
-            browser.storage.local.get('types')
+            this.$browser.storage.local.get('types')
                 .then(data => {
                     this.stored = data.types
                     this.selected = data.types

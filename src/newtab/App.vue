@@ -44,7 +44,7 @@
                     <v-btn
                             large
                             dark
-                            color="info"
+                            color="pink lighten-3"
                             right
                             absolute
                             fab
@@ -231,6 +231,11 @@
                     this.fetch()
                 })
             this.getWallpaper()
+            this.$browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
+                if (message.action === "updateTypes") {
+                    this.stored = message.data
+                }
+            })
         },
     }
 </script>

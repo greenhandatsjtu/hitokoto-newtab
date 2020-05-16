@@ -59,7 +59,6 @@
                 .then(data => {
                     this.stored = data.types
                     this.selected = data.types
-                    this.fetch()
                 })
         },
     }

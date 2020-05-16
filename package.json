@@ -2,7 +2,7 @@
   "name": "hitokoto-newtab",
   "version": "1.0.0",
   "description": "A Vue.js web extension changing default new tab to hitokoto",
-  "author": "sunhengke <sunhengke@sjtu.edu.cn>",
+  "author": "AnimeFan",
   "engines": {
     "node": ">=10"
   },

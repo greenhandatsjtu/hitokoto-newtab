@@ -7,6 +7,8 @@ ___
 
 ## Usage/使用方法
 
+**已在chrome web store发布，可直接点击[链接](https://chrome.google.com/webstore/detail/hitokoto-newtab/idbfacpljhlamgmclfbpcaiiobcggpdm)下载**
+
 ```bash
 npm install
 ```

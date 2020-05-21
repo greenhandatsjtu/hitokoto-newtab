@@ -46,6 +46,7 @@ First enable Developer mode in `chrome://extensions/`, choose `Load uppacked`, a
 + [x] 添加上传壁纸的功能（2020/05/14）
 + [ ] 缩减插件大小
 + [ ] 美化界面
++ [ ] 解决壁纸大小问题
 
 ## Thanks/感谢
 

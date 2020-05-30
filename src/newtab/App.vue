@@ -110,6 +110,7 @@
                 <v-btn
                         dark
                         text
+                        icon
                         @click="snackbar.show = false"
                 >
                     <v-icon>mdi-close</v-icon>
